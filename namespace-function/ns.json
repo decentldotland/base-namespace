@@ -1,0 +1,38 @@
+{
+  "tld": ".yourdomain",
+  "chain": "PAYMENTS_CHAIN_ID",
+  "token_address": "PAYMENT_TOKEN_SMART_CONTRACT_ADDR",
+  "token_decimals": 1e18, // change according to your token
+  "treasury_address": "YOUR_EOA_TO_RECEIVE_MINTING_PROCEEDS",
+  "admin_address": "EVM_EOA",
+  "sig_message": "UNIQUE_SIG_MESSAGE_TEXT",
+  "domains": [],
+  "evm_molecule_endpoint": "http://evm.molecule.sh",
+  "payments_molecule_endpoint": "https://molext1.com/tx",
+  "counter": 0,
+  "pricing": {
+    "l2": 1000000,
+    "l3": 500000,
+    "l4": 300000,
+    "l5": 250000,
+    "l6": 220000,
+    "l7": 200000,
+    "l8": 180000,
+    "l9": 160000,
+    "l10": 140000,
+    "l11": 120000,
+    "l12": 100000,
+    "l13": 80000,
+    "l14": 40000,
+    "l15": 20000
+  },
+  "signatures": [],
+  "payments": [],
+  "publicFunctions": {
+    "mint": ["caller", "sig", "domain", "tx_fee"],
+    "setPrimaryDomain": ["caller", "sig", "domain"],
+    "transfer": ["caller", "sig", "domain", "target"],
+    "resolve": ["domain", "address"],
+    "pauseUnpauseContract": ["sig"]
+  }
+}
