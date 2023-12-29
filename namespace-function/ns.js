@@ -200,7 +200,7 @@ export async function handle(state, action) {
           !!Number(tx?.value) &&
           tx?.to_address.toLowerCase() == state.treasury_address.toLowerCase() &&
           tx?.from_address.toLowerCase() === from.toLowerCase(),
-        "ERROR_INVALID_AR_PRICE",
+        "ERROR_INVALID_PAYMENT_TX",
       );
 
       ContractAssert(
